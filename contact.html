@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact CourseLearn - Get in touch with us for any queries, support, or feedback.">
+    <title>Contact Us - CourseLearn</title>
+    <link rel="stylesheet" href="contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">&#9733;</span> CourseLearn
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="register.html" class="nav-btn">Register / Login</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <span class="section-badge">Get In Touch</span>
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you. Reach out to us anytime!</p>
+        </div>
+    </section>
+
+    <section class="contact-section" id="contactSection">
+        <div class="container">
+            <div class="contact-grid">
+
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon" style="background: linear-gradient(135deg, #e88a3a, #c0392b);">
+                            &#128205;
+                        </div>
+                        <h3>Our Address</h3>
+                        <p>Gandipet, near CBIT</p>
+                        <p>Hyderabad</p>
+                        <p>Telangana, India</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon" style="background: linear-gradient(135deg, #f7b733, #fc4a1a);">
+                            &#128231;
+                        </div>
+                        <h3>Email Us</h3>
+                        <p>info@CourseLearn.com</p>
+                        <p>support@CourseLearn.com</p>
+                        <p>admissions@CourseLearn.com</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon" style="background: linear-gradient(135deg, #4facfe, #00f2fe);">
+                            &#128222;
+                        </div>
+                        <h3>Call Us</h3>
+                        <p>+91 98765 43210</p>
+                        <p>+91 12345 67890</p>
+                        <p>Mon - Sat: 9AM - 6PM IST</p>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <h2>Send Us a Message</h2>
+                        <p class="form-subtitle">Fill out the form below and we'll get back to you within 24 hours</p>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contactName">Full Name <span class="required">*</span></label>
+                                <input type="text" id="contactName" name="name" placeholder="Your name" required>
+                                <span class="error-message" id="contactNameError"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactEmail">Email <span class="required">*</span></label>
+                                <input type="email" id="contactEmail" name="email" placeholder="Your email" required>
+                                <span class="error-message" id="contactEmailError"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactSubject">Subject <span class="required">*</span></label>
+                            <input type="text" id="contactSubject" name="subject" placeholder="What is this about?" required>
+                            <span class="error-message" id="contactSubjectError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactMessage">Message <span class="required">*</span></label>
+                            <textarea id="contactMessage" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+                            <span class="error-message" id="contactMessageError"></span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-full" id="contactSubmitBtn">Send Message</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="map-section" id="mapSection">
+        <div class="container">
+            <div class="map-placeholder">
+                <div class="map-content">
+                    <span class="map-icon">&#127759;</span>
+                    <h3>Find Us on the Map</h3>
+                    <p>Gandipet, near CBIT, Hyderabad, Telangana</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3><span class="logo-icon">&#9733;</span> CourseLearn</h3>
+                    <p>Empowering learners worldwide with quality education and practical skills for the modern world.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="register.html">Register</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Popular Courses</h4>
+                    <ul>
+                        <li><a href="course-details.html">Web Development</a></li>
+                        <li><a href="course-details.html">Data Science</a></li>
+                        <li><a href="course-details.html">Cloud Computing</a></li>
+                        <li><a href="course-details.html">UI/UX Design</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li>&#128205; Gandipet, near CBIT, Hyderabad, Telangana</li>
+                        <li>&#128231; info@CourseLearn.com</li>
+                        <li>&#128222; +91 98765 43210</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 CourseLearn. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

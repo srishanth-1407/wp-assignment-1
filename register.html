@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Register or Login to CourseLearn. Create your account and start learning today.">
+    <title>Register / Login - CourseLearn</title>
+    <link rel="stylesheet" href="register.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">&#9733;</span> CourseLearn
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="register.html" class="nav-btn active">Register / Login</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <span class="section-badge">Account</span>
+            <h1>Register / Login</h1>
+            <p>Create your account or sign in to continue learning</p>
+        </div>
+    </section>
+
+    <section class="auth-section" id="authSection">
+        <div class="container">
+            <div class="auth-container">
+
+                <div class="auth-tabs" id="authTabs">
+                    <button class="auth-tab active" id="registerTab" data-tab="register">Register</button>
+                    <button class="auth-tab" id="loginTab" data-tab="login">Login</button>
+                </div>
+
+                <form class="auth-form" id="registerForm">
+                    <h2>Create Your Account</h2>
+                    <p class="form-subtitle">Create a free account to get started</p>
+
+                    <div class="form-group">
+                        <label for="regName">Full Name <span class="required">*</span></label>
+                        <input type="text" id="regName" name="name" placeholder="Enter your full name" required>
+                        <span class="error-message" id="regNameError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="regEmail">Email Address <span class="required">*</span></label>
+                        <input type="email" id="regEmail" name="email" placeholder="Enter your email" required>
+                        <span class="error-message" id="regEmailError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="regPassword">Password <span class="required">*</span></label>
+                        <input type="password" id="regPassword" name="password" placeholder="Create a password" required>
+                        <span class="error-message" id="regPasswordError"></span>
+                        <div class="password-strength" id="passwordStrength">
+                            <div class="strength-bar" id="strengthBar"></div>
+                        </div>
+                        <span class="strength-text" id="strengthText"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="regConfirmPassword">Confirm Password <span class="required">*</span></label>
+                        <input type="password" id="regConfirmPassword" name="confirmPassword" placeholder="Confirm your password" required>
+                        <span class="error-message" id="regConfirmPasswordError"></span>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-full" id="registerBtn">Create Account</button>
+
+                    <p class="form-footer">
+                        Already have an account? <a href="#" id="switchToLogin">Login here</a>
+                    </p>
+                </form>
+
+                <form class="auth-form hidden" id="loginForm">
+                    <h2>Welcome Back</h2>
+                    <p class="form-subtitle">Sign in to your account</p>
+
+                    <div class="form-group">
+                        <label for="loginEmail">Email Address <span class="required">*</span></label>
+                        <input type="email" id="loginEmail" name="email" placeholder="Enter your email" required>
+                        <span class="error-message" id="loginEmailError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="loginPassword">Password <span class="required">*</span></label>
+                        <input type="password" id="loginPassword" name="password" placeholder="Enter your password" required>
+                        <span class="error-message" id="loginPasswordError"></span>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-full" id="loginBtn">Login</button>
+
+                    <p class="form-footer">
+                        Don't have an account? <a href="#" id="switchToRegister">Register here</a>
+                    </p>
+                </form>
+
+                <div class="success-message hidden" id="successMessage">
+                    <div class="success-icon">&#10004;</div>
+                    <h2 id="successTitle">Registration Successful!</h2>
+                    <p id="successText">Welcome to CourseLearn! You can now explore our courses.</p>
+                    <a href="courses.html" class="btn btn-primary">Browse Courses</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3><span class="logo-icon">&#9733;</span> CourseLearn</h3>
+                    <p>Empowering learners worldwide with quality education and practical skills for the modern world.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="register.html">Register</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Popular Courses</h4>
+                    <ul>
+                        <li><a href="course-details.html">Web Development</a></li>
+                        <li><a href="course-details.html">Data Science</a></li>
+                        <li><a href="course-details.html">Cloud Computing</a></li>
+                        <li><a href="course-details.html">UI/UX Design</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li>&#128205; Gandipet, near CBIT, Hyderabad, Telangana</li>
+                        <li>&#128231; info@CourseLearn.com</li>
+                        <li>&#128222; +91 98765 43210</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 CourseLearn. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

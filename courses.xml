@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eduverse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation="courses.xsd">
+
+    <courses>
+        <course id="C001">
+            <title>Full-Stack Web Development</title>
+            <category>Web Development</category>
+            <instructor>
+                <name>Dr. Sarah Johnson</name>
+                <designation>Senior Software Engineer</designation>
+                <experience>12 years</experience>
+            </instructor>
+            <description>Comprehensive course covering HTML, CSS, JavaScript, React, Node.js, and MongoDB for building modern web applications.</description>
+            <duration>18 Weeks</duration>
+            <lectures>120</lectures>
+            <level>Beginner to Advanced</level>
+            <language>English</language>
+            <price currency="INR">4999</price>
+            <originalPrice currency="INR">9999</originalPrice>
+            <rating>4.9</rating>
+            <reviews>2300</reviews>
+            <certificate>true</certificate>
+        </course>
+
+        <course id="C002">
+            <title>Data Science and Machine Learning</title>
+            <category>Data Science</category>
+            <instructor>
+                <name>Prof. Michael Chen</name>
+                <designation>Data Science Lead</designation>
+                <experience>10 years</experience>
+            </instructor>
+            <description>Learn Python, Pandas, NumPy, Scikit-learn, TensorFlow, and data visualization for data-driven decision making.</description>
+            <duration>20 Weeks</duration>
+            <lectures>150</lectures>
+            <level>Intermediate</level>
+            <language>English</language>
+            <price currency="INR">5499</price>
+            <originalPrice currency="INR">10999</originalPrice>
+            <rating>4.8</rating>
+            <reviews>1800</reviews>
+            <certificate>true</certificate>
+        </course>
+
+        <course id="C003">
+            <title>AWS Cloud Practitioner</title>
+            <category>Cloud Computing</category>
+            <instructor>
+                <name>Emily Rodriguez</name>
+                <designation>Cloud Architect</designation>
+                <experience>8 years</experience>
+            </instructor>
+            <description>Master AWS services including EC2, S3, Lambda, RDS, and prepare for the AWS Cloud Practitioner certification.</description>
+            <duration>12 Weeks</duration>
+            <lectures>90</lectures>
+            <level>Beginner</level>
+            <language>English</language>
+            <price currency="INR">3999</price>
+            <originalPrice currency="INR">7999</originalPrice>
+            <rating>4.7</rating>
+            <reviews>1200</reviews>
+            <certificate>true</certificate>
+        </course>
+
+        <course id="C004">
+            <title>UI/UX Design Masterclass</title>
+            <category>UI/UX Design</category>
+            <instructor>
+                <name>Lisa Wang</name>
+                <designation>Lead UX Designer</designation>
+                <experience>9 years</experience>
+            </instructor>
+            <description>Learn user research, wireframing, prototyping with Figma, and design systems for creating exceptional user experiences.</description>
+            <duration>14 Weeks</duration>
+            <lectures>100</lectures>
+            <level>Beginner to Intermediate</level>
+            <language>English</language>
+            <price currency="INR">4499</price>
+            <originalPrice currency="INR">8999</originalPrice>
+            <rating>4.8</rating>
+            <reviews>950</reviews>
+            <certificate>true</certificate>
+        </course>
+
+        <course id="C005">
+            <title>React Native App Development</title>
+            <category>Mobile Development</category>
+            <instructor>
+                <name>David Park</name>
+                <designation>Mobile App Developer</designation>
+                <experience>7 years</experience>
+            </instructor>
+            <description>Build cross-platform mobile apps using React Native, covering navigation, state management, and native modules.</description>
+            <duration>16 Weeks</duration>
+            <lectures>110</lectures>
+            <level>Intermediate</level>
+            <language>English</language>
+            <price currency="INR">4299</price>
+            <originalPrice currency="INR">8599</originalPrice>
+            <rating>4.6</rating>
+            <reviews>780</reviews>
+            <certificate>true</certificate>
+        </course>
+
+        <course id="C006">
+            <title>Ethical Hacking and Cybersecurity</title>
+            <category>Cybersecurity</category>
+            <instructor>
+                <name>James Miller</name>
+                <designation>Cybersecurity Specialist</designation>
+                <experience>11 years</experience>
+            </instructor>
+            <description>Learn penetration testing, network security, vulnerability assessment, and ethical hacking methodologies.</description>
+            <duration>20 Weeks</duration>
+            <lectures>140</lectures>
+            <level>Intermediate to Advanced</level>
+            <language>English</language>
+            <price currency="INR">5999</price>
+            <originalPrice currency="INR">11999</originalPrice>
+            <rating>4.9</rating>
+            <reviews>1500</reviews>
+            <certificate>true</certificate>
+        </course>
+
+        <course id="C007">
+            <title>Digital Marketing Complete Guide</title>
+            <category>Digital Marketing</category>
+            <instructor>
+                <name>Priya Kapoor</name>
+                <designation>Marketing Strategist</designation>
+                <experience>8 years</experience>
+            </instructor>
+            <description>Master SEO, SEM, social media marketing, content marketing, email marketing, and analytics tools.</description>
+            <duration>10 Weeks</duration>
+            <lectures>80</lectures>
+            <level>Beginner</level>
+            <language>English</language>
+            <price currency="INR">2999</price>
+            <originalPrice currency="INR">5999</originalPrice>
+            <rating>4.5</rating>
+            <reviews>620</reviews>
+            <certificate>true</certificate>
+        </course>
+
+        <course id="C008">
+            <title>Python for Beginners</title>
+            <category>Python</category>
+            <instructor>
+                <name>Dr. Arjun Mehta</name>
+                <designation>Computer Science Professor</designation>
+                <experience>15 years</experience>
+            </instructor>
+            <description>Learn Python programming from scratch including data types, control flow, functions, OOP, and file handling.</description>
+            <duration>8 Weeks</duration>
+            <lectures>60</lectures>
+            <level>Beginner</level>
+            <language>English</language>
+            <price currency="INR">1999</price>
+            <originalPrice currency="INR">3999</originalPrice>
+            <rating>4.7</rating>
+            <reviews>2100</reviews>
+            <certificate>true</certificate>
+        </course>
+
+        <course id="C009">
+            <title>Artificial Intelligence Fundamentals</title>
+            <category>AI / ML</category>
+            <instructor>
+                <name>Dr. Kavitha Rao</name>
+                <designation>AI Research Scientist</designation>
+                <experience>10 years</experience>
+            </instructor>
+            <description>Explore AI concepts including neural networks, NLP, computer vision, reinforcement learning, and generative AI.</description>
+            <duration>22 Weeks</duration>
+            <lectures>160</lectures>
+            <level>Intermediate to Advanced</level>
+            <language>English</language>
+            <price currency="INR">6499</price>
+            <originalPrice currency="INR">12999</originalPrice>
+            <rating>4.8</rating>
+            <reviews>1100</reviews>
+            <certificate>true</certificate>
+        </course>
+    </courses>
+
+    <contactInfo>
+        <address>123 Learning Street, Koramangala, Bangalore, Karnataka, India - 560034</address>
+        <email>info@eduverse.com</email>
+        <phone>+91 98765 43210</phone>
+        <website>https://www.eduverse.com</website>
+    </contactInfo>
+
+</eduverse>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CourseLearn - Your gateway to online learning. Explore courses, learn new skills, and advance your career with expert instructors.">
+    <title>CourseLearn - Online Learning Platform</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">&#9733;</span> CourseLearn
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="register.html" class="nav-btn">Register / Login</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <header class="hero" id="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Unlock Your Potential with <span class="highlight">CourseLearn</span></h1>
+            <p class="hero-description">
+                Discover thousands of courses taught by industry experts. 
+                Build skills, earn certificates, and advance your career from anywhere in the world.
+            </p>
+
+            <div class="hero-actions">
+                <a href="courses.html" class="btn btn-primary">Explore Courses</a>
+                <a href="register.html" class="btn btn-outline">Get Started Free</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Why Choose Us</span>
+                <h2>Learn Without Limits</h2>
+                <p>Start, switch, or advance your career with our comprehensive learning paths</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">&#128218;</div>
+                    <h3>Expert-Led Courses</h3>
+                    <p>Learn from industry professionals with real-world experience and proven teaching methods.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">&#127912;</div>
+                    <h3>Flexible Learning</h3>
+                    <p>Study at your own pace, on your schedule. Access courses anytime, anywhere.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">&#127942;</div>
+                    <h3>Certificates</h3>
+                    <p>Earn recognized certificates to showcase your skills to employers worldwide.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">&#129309;</div>
+                    <h3>Community Support</h3>
+                    <p>Join a vibrant community of learners and mentors who support your growth journey.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">&#128187;</div>
+                    <h3>Hands-On Projects</h3>
+                    <p>Apply what you learn with practical projects and real-world case studies.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">&#128176;</div>
+                    <h3>Affordable Pricing</h3>
+                    <p>Quality education at competitive prices with flexible payment options available.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="popular-courses" id="popularCourses">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Top Picks</span>
+                <h2>Popular Courses</h2>
+                <p>Explore our most popular courses loved by thousands of students</p>
+            </div>
+            <div class="courses-grid">
+                <div class="course-card">
+                    <div class="course-image" style="background: url('https://picsum.photos/id/0/800/500') center/cover;">
+                        <span class="course-category">Web Development</span>
+                    </div>
+                    <div class="course-info">
+                        <h3 class="course-title">Full-Stack Web Development</h3>
+                        <p class="course-instructor">&#128100; Dr. Sarah Johnson</p>
+                        <div class="course-meta">
+                            <span class="course-rating">&#11088; 4.9 (2.3k reviews)</span>
+                            <span class="course-price">&#8377;4,999</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="course-image" style="background: url('https://media.geeksforgeeks.org/wp-content/uploads/20231231113646/ML-Tutorial.jpg') center/cover;">
+                        <span class="course-category">Data Science</span>
+                    </div>
+                    <div class="course-info">
+                        <h3 class="course-title">Data Science & Machine Learning</h3>
+                        <p class="course-instructor">&#128100; Prof. Michael Chen</p>
+                        <div class="course-meta">
+                            <span class="course-rating">&#11088; 4.8 (1.8k reviews)</span>
+                            <span class="course-price">&#8377;5,499</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="course-image" style="background: url('https://picsum.photos/id/20/800/500') center/cover;">
+                        <span class="course-category">Cloud Computing</span>
+                    </div>
+                    <div class="course-info">
+                        <h3 class="course-title">AWS Cloud Practitioner</h3>
+                        <p class="course-instructor">&#128100; Emily Rodriguez</p>
+                        <div class="course-meta">
+                            <span class="course-rating">&#11088; 4.7 (1.2k reviews)</span>
+                            <span class="course-price">&#8377;3,999</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-cta">
+                <a href="courses.html" class="btn btn-primary">View All Courses</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3><span class="logo-icon">&#9733;</span> CourseLearn</h3>
+                    <p>Empowering learners worldwide with quality education and practical skills for the modern world.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="register.html">Register</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Popular Courses</h4>
+                    <ul>
+                        <li><a href="course-details.html">Web Development</a></li>
+                        <li><a href="course-details.html">Data Science</a></li>
+                        <li><a href="course-details.html">Cloud Computing</a></li>
+                        <li><a href="course-details.html">UI/UX Design</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li>&#128205; Gandipet, near CBIT, Hyderabad, Telangana</li>
+                        <li>&#128231; info@CourseLearn.com</li>
+                        <li>&#128222; +91 98765 43210</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 CourseLearn. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
