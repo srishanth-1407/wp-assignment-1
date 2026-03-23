@@ -1,0 +1,6 @@
+﻿5b2ea88 Rename background script
+ab76de5 Merge branch 'main' of https://github.com/srishanth-1407/wp-assignment-1
+2e7044f Refactored user interface to minimal monochrome design
+a8b9e1d Update theme to B&W, use flat gray background, generate dynamic course details, and resolve frontend caches
+d6b8d50 Add all project files: HTML pages, CSS stylesheets, JS, XML/XSD, and assets
+fd28c7c Initial commit
