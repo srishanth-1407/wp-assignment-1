@@ -1,23 +1,23 @@
 :root {
-    --primary: #ffffff;
-    --primary-dark: #cccccc;
-    --secondary: #999999;
-    --accent: #ffffff;
-    --bg-dark: #0f1419;
-    --bg-card: #1a2028;
-    --bg-card-hover: #222d38;
-    --text-primary: #ffffff;
-    --text-secondary: #b8c4d0;
-    --text-muted: #7a8a9a;
-    --border-color: #2a3540;
-    --success: #43e97b;
-    --warning: #fee140;
-    --error: #e74c3c;
-    --gradient-primary: linear-gradient(135deg, #ffffff, #cccccc);
-    --gradient-accent: linear-gradient(135deg, #dddddd, #999999);
-    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.2);
-    --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.3);
-    --shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.4);
+    --primary: #000000;
+    --primary-dark: #333333;
+    --secondary: #555555;
+    --accent: #000000;
+    --bg-dark: #ffffff;
+    --bg-card: #f9f9f9;
+    --bg-card-hover: #f0f0f0;
+    --text-primary: #000000;
+    --text-secondary: #333333;
+    --text-muted: #666666;
+    --border-color: #dddddd;
+    --success: #28a745;
+    --warning: #ffc107;
+    --error: #dc3545;
+    --gradient-primary: linear-gradient(135deg, #000000, #444444);
+    --gradient-accent: linear-gradient(135deg, #333333, #666666);
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.15);
     --radius-sm: 8px;
     --radius-md: 12px;
     --radius-lg: 16px;
@@ -31,7 +31,7 @@ html { scroll-behavior: smooth; }
 
 body { font-family: var(--font-family); background: #7e8186; color: var(--text-primary); line-height: 1.6; overflow-x: hidden; position: relative; }
 
-body::before { display: none; }
+
 
 body > * { position: relative; z-index: 1; }
 a { text-decoration: none; color: inherit; transition: var(--transition); }
@@ -45,7 +45,7 @@ img { max-width: 100%; display: block; }
     position: fixed;
     top: 0; left: 0; right: 0;
     z-index: 1000;
-    background: rgba(15, 20, 25, 0.7);
+    background: #ffffff;
     backdrop-filter: blur(20px);
     border-bottom: 1px solid var(--border-color);
     padding: 0 20px;
@@ -65,7 +65,7 @@ img { max-width: 100%; display: block; }
     display: flex; align-items: center; gap: 8px;
 }
 
-.logo-icon { font-size: 1.3rem; -webkit-text-fill-color: #ffffff; }
+.logo-icon { font-size: 1.3rem; -webkit-text-fill-color: #000000; }
 .nav-links { display: flex; align-items: center; gap: 32px; }
 
 .nav-links a {
@@ -85,7 +85,7 @@ img { max-width: 100%; display: block; }
 .nav-btn {
     background: var(--gradient-primary) !important;
     padding: 10px 24px !important; border-radius: var(--radius-sm) !important;
-    color: #000 !important; -webkit-text-fill-color: initial;
+    color: #ffffff !important; -webkit-text-fill-color: initial;
 }
 
 .nav-btn::after { display: none !important; }
@@ -133,7 +133,7 @@ img { max-width: 100%; display: block; }
     border-radius: 6px; transition: var(--transition);
 }
 
-.auth-tab.active { background: var(--gradient-primary); color: #000; }
+.auth-tab.active { background: var(--gradient-primary); color: #ffffff; }
 
 .auth-tab:hover:not(.active) {
     color: var(--text-primary); background: rgba(255, 255, 255, 0.1);
@@ -154,7 +154,7 @@ img { max-width: 100%; display: block; }
 }
 
 .form-group input, .form-group textarea, .form-group select {
-    width: 100%; padding: 14px 16px; background: rgba(15, 20, 25, 0.6);
+    width: 100%; padding: 14px 16px; background: #ffffff;
     border: 1px solid var(--border-color); border-radius: var(--radius-sm);
     color: var(--text-primary); font-family: var(--font-family);
     font-size: 0.95rem; transition: var(--transition);
@@ -199,7 +199,7 @@ img { max-width: 100%; display: block; }
     border: none; font-family: var(--font-family); text-align: center;
 }
 
-.btn-primary { background: var(--gradient-primary); color: #000; }
+.btn-primary { background: var(--gradient-primary); color: #ffffff; }
 .btn-primary:hover {
     transform: translateY(-3px); box-shadow: 0 6px 25px rgba(255, 255, 255, 0.3);
 }
@@ -223,7 +223,7 @@ img { max-width: 100%; display: block; }
 .success-message p { color: var(--text-secondary); margin-bottom: 28px; }
 
 .footer {
-    background: rgba(10, 14, 18, 0.8); border-top: 1px solid var(--border-color);
+    background: #ffffff; border-top: 1px solid var(--border-color);
     padding: 60px 20px 30px;
 }
 
@@ -263,7 +263,7 @@ img { max-width: 100%; display: block; }
     .nav-links {
         display: none; position: absolute;
         top: 70px; left: 0; right: 0;
-        background: rgba(15, 20, 25, 0.98); flex-direction: column;
+        background: #ffffff; flex-direction: column;
         padding: 20px; gap: 16px; border-bottom: 1px solid var(--border-color);
     }
     .nav-links.active { display: flex; }
