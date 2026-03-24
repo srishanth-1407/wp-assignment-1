@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Full-Stack Web Development Course - Learn HTML, CSS, JavaScript, React, Node.js and more with Dr. Sarah Johnson.">
-    <title>Full-Stack Web Development - CourseLearn</title>
-    <link rel="stylesheet" href="course-details.css?v=3">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <meta name="description" content="Course Details - CourseLearn">
+    <title>Course Details - CourseLearn</title>
+    <link rel="stylesheet" href="course-details.css">
 </head>
 <body>
 
@@ -32,8 +31,8 @@
     <section class="page-header">
         <div class="container">
             <span class="section-badge">Course Details</span>
-            <h1>Full-Stack Web Development</h1>
-            <p>Master modern web technologies from front-end to back-end</p>
+            <h1 id="courseTitle">Loading...</h1>
+            <p id="courseSubtitle"></p>
         </div>
     </section>
 
@@ -42,97 +41,18 @@
             <div class="course-details-grid">
 
                 <div class="course-main">
-
                     <div class="detail-card">
                         <h2>&#128214; Course Description</h2>
-                        <p>
-                            This comprehensive Full-Stack Web Development course is designed to take you from a complete 
-                            beginner to a job-ready developer. You'll learn everything from building beautiful front-end 
-                            interfaces with HTML, CSS, and JavaScript to creating powerful back-end servers with Node.js 
-                            and Express.
-                        </p>
-                        <p>
-                            Throughout the course, you'll work on real-world projects that will form the foundation of your 
-                            professional portfolio. By the end, you'll be equipped with the skills needed to build, deploy, 
-                            and maintain modern web applications.
-                        </p>
-                        <p>
-                            Whether you're looking to change careers, freelance, or simply expand your skill set, this 
-                            course provides the knowledge and practical experience you need to succeed in the tech industry.
-                        </p>
-                    </div>
-
-                    <div class="detail-card">
-                        <h2>&#128218; Course Curriculum</h2>
-                        <div class="curriculum-list">
-                            <div class="curriculum-item">
-                                <div class="curriculum-header">
-                                    <span class="module-number">Module 1</span>
-                                    <h4>HTML5 & Semantic Markup</h4>
-                                    <span class="module-duration">2 Weeks</span>
-                                </div>
-                                <p>HTML fundamentals, semantic elements, forms, tables, and accessibility best practices.</p>
-                            </div>
-                            <div class="curriculum-item">
-                                <div class="curriculum-header">
-                                    <span class="module-number">Module 2</span>
-                                    <h4>CSS3 & Responsive Design</h4>
-                                    <span class="module-duration">3 Weeks</span>
-                                </div>
-                                <p>CSS selectors, Flexbox, Grid, animations, media queries, and responsive design patterns.</p>
-                            </div>
-                            <div class="curriculum-item">
-                                <div class="curriculum-header">
-                                    <span class="module-number">Module 3</span>
-                                    <h4>JavaScript ES6+</h4>
-                                    <span class="module-duration">4 Weeks</span>
-                                </div>
-                                <p>Variables, functions, DOM manipulation, async programming, fetch API, and ES6+ features.</p>
-                            </div>
-                            <div class="curriculum-item">
-                                <div class="curriculum-header">
-                                    <span class="module-number">Module 4</span>
-                                    <h4>React.js Framework</h4>
-                                    <span class="module-duration">4 Weeks</span>
-                                </div>
-                                <p>Components, JSX, state management, hooks, routing, and building single-page applications.</p>
-                            </div>
-                            <div class="curriculum-item">
-                                <div class="curriculum-header">
-                                    <span class="module-number">Module 5</span>
-                                    <h4>Node.js & Express</h4>
-                                    <span class="module-duration">3 Weeks</span>
-                                </div>
-                                <p>Server setup, RESTful APIs, middleware, authentication, and database integration.</p>
-                            </div>
-                            <div class="curriculum-item">
-                                <div class="curriculum-header">
-                                    <span class="module-number">Module 6</span>
-                                    <h4>MongoDB & Deployment</h4>
-                                    <span class="module-duration">2 Weeks</span>
-                                </div>
-                                <p>Database design, CRUD operations, Mongoose ODM, cloud deployment, and CI/CD basics.</p>
-                            </div>
-                        </div>
+                        <p id="courseDescription"></p>
                     </div>
 
                     <div class="detail-card">
                         <h2>&#128105;&#8205;&#127891; Instructor Details</h2>
                         <div class="instructor-profile">
-                            <div class="instructor-avatar" style="background: #ffffff; color: #000; border: 1px solid #333;">SJ</div>
                             <div class="instructor-info">
-                                <h3>Dr. Sarah Johnson</h3>
-                                <p class="instructor-title">Senior Software Engineer & Educator</p>
-                                <p>
-                                    Dr. Sarah Johnson is an award-winning educator with over 12 years of experience in 
-                                    software development. She holds a Ph.D. in Computer Science from MIT and has worked 
-                                    at leading tech companies including Google and Microsoft.
-                                </p>
-                                <div class="instructor-stats">
-                                    <span>&#128218; 15 Courses</span>
-                                    <span>&#128101; 50,000+ Students</span>
-                                    <span>Rating: 4.9 Avg</span>
-                                </div>
+                                <h3 id="instructorName"></h3>
+                                <p class="instructor-title">Instructor</p>
+                                <p id="instructorBio"></p>
                             </div>
                         </div>
                     </div>
@@ -140,28 +60,26 @@
 
                 <div class="course-sidebar">
                     <div class="sidebar-card">
-                        <div class="sidebar-image" style="background: #ffffff; border-bottom: 1px solid #333; color: #000;">
-                            <span class="sidebar-category">Web Development</span>
-                        </div>
+                        <div class="sidebar-image" id="sidebarImage"></div>
                         <div class="sidebar-content">
                             <div class="sidebar-price">
-                                <span class="current-price">&#8377;4,999</span>
-                                <span class="original-price">&#8377;9,999</span>
+                                <span class="current-price" id="currentPrice"></span>
+                                <span class="original-price" id="originalPrice"></span>
                                 <span class="discount-badge">50% OFF</span>
                             </div>
                             <a href="register.html" class="btn btn-primary btn-full" id="enrollBtn">Enroll Now</a>
                             <div class="sidebar-details">
                                 <div class="sidebar-detail">
                                     <span>&#128197; Duration</span>
-                                    <strong>18 Weeks</strong>
+                                    <strong id="duration"></strong>
                                 </div>
                                 <div class="sidebar-detail">
                                     <span>&#128218; Lectures</span>
-                                    <strong>120 Lessons</strong>
+                                    <strong id="lectures"></strong>
                                 </div>
                                 <div class="sidebar-detail">
                                     <span>&#127891; Level</span>
-                                    <strong>Beginner to Advanced</strong>
+                                    <strong id="level"></strong>
                                 </div>
                                 <div class="sidebar-detail">
                                     <span>&#127760; Language</span>
@@ -173,7 +91,7 @@
                                 </div>
                                 <div class="sidebar-detail">
                                     <span>Rating</span>
-                                    <strong>4.9 / 5.0</strong>
+                                    <strong id="rating"></strong>
                                 </div>
                             </div>
                         </div>
@@ -203,10 +121,10 @@
                 <div class="footer-col">
                     <h4>Popular Courses</h4>
                     <ul>
-                        <li><a href="course-details.html">Web Development</a></li>
-                        <li><a href="course-details.html">Data Science</a></li>
-                        <li><a href="course-details.html">Cloud Computing</a></li>
-                        <li><a href="course-details.html">UI/UX Design</a></li>
+                        <li><a href="course-details.html?id=1">Web Development</a></li>
+                        <li><a href="course-details.html?id=2">Data Science</a></li>
+                        <li><a href="course-details.html?id=3">Cloud Computing</a></li>
+                        <li><a href="course-details.html?id=4">UI/UX Design</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
@@ -226,5 +144,117 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
     <script src="script.js"></script>
+    <script>
+        // All course data in one place
+        var courses = {
+            1: {
+                title: "Full-Stack Web Development",
+                subtitle: "Learn HTML, CSS, JavaScript, React and Node.js",
+                description: "This course covers the basics of building websites using HTML, CSS, and JavaScript. You will learn how to create web pages, style them, and add interactivity. The course also introduces back-end development using Node.js. By the end, you will be able to build and deploy a simple full-stack web application.",
+                instructor: "Dr. Aanya Sharma",
+                instructorBio: "Dr. Aanya Sharma has been teaching web development for over 8 years. She has a Master's degree in Computer Science from IIT Delhi. She has trained more than 5,000 students through online and offline courses. Her teaching style focuses on simple examples and hands-on practice.",
+                image: "images/img1.jpg",
+                price: "&#8377;4,999",
+                originalPrice: "&#8377;9,999",
+                duration: "18 Weeks",
+                lectures: "120 Lessons",
+                level: "Beginner to Advanced",
+                rating: "4.9 / 5.0"
+            },
+            2: {
+                title: "Data Science & Machine Learning",
+                subtitle: "Master data analysis, statistics and ML algorithms",
+                description: "This course introduces you to the field of data science and machine learning. You will learn how to work with data using Python, perform basic statistics, and apply common ML algorithms. Topics include data cleaning, visualization, and building simple prediction models. No prior data science experience is required.",
+                instructor: "Prof. Rajesh Kumar",
+                instructorBio: "Prof. Rajesh Kumar is a data science trainer with 10 years of industry and teaching experience. He holds a Ph.D. in Statistics from IIT Bombay. He has worked with several companies in data analysis and model building. He has published research papers and regularly conducts workshops on machine learning.",
+                image: "images/img2.jpg",
+                price: "&#8377;5,499",
+                originalPrice: "&#8377;10,999",
+                duration: "20 Weeks",
+                lectures: "150 Lessons",
+                level: "Intermediate",
+                rating: "4.8 / 5.0"
+            },
+            3: {
+                title: "AWS Cloud Practitioner",
+                subtitle: "Understand cloud computing and AWS core services",
+                description: "This course explains the basics of cloud computing and the Amazon Web Services platform. You will understand key AWS services such as EC2, S3, and RDS. The course prepares you for the AWS Cloud Practitioner certification exam. It is suitable for beginners with no prior cloud experience.",
+                instructor: "Anjali Gupta",
+                instructorBio: "Anjali Gupta is a certified AWS cloud trainer with 6 years of experience. She has helped over 2,000 students pass the AWS certification exams. She worked as a cloud consultant at a leading IT firm before joining the teaching profession. She explains complex cloud concepts in a clear and simple way.",
+                image: "images/img3.jpg",
+                price: "&#8377;3,999",
+                originalPrice: "&#8377;7,999",
+                duration: "12 Weeks",
+                lectures: "90 Lessons",
+                level: "Beginner",
+                rating: "4.7 / 5.0"
+            },
+            4: {
+                title: "UI/UX Design Masterclass",
+                subtitle: "Design beautiful and user-friendly interfaces",
+                description: "This course teaches the fundamentals of UI and UX design. You will learn how to design user-friendly interfaces using tools like Figma. Topics include wireframing, prototyping, color theory, and design principles. By the end, you will be able to create a complete UI design for a web or mobile app.",
+                instructor: "Kavita Reddy",
+                instructorBio: "Kavita Reddy is a professional UI/UX designer with 7 years of experience in product design. She has worked with startups and large companies to design mobile and web applications. She completed her design training from NID Ahmedabad. She is passionate about making design education simple and practical.",
+                image: "images/img4.jpg",
+                price: "&#8377;4,499",
+                originalPrice: "&#8377;8,999",
+                duration: "14 Weeks",
+                lectures: "100 Lessons",
+                level: "Beginner to Intermediate",
+                rating: "4.8 / 5.0"
+            },
+            5: {
+                title: "React Native App Development",
+                subtitle: "Build cross-platform mobile apps with React Native",
+                description: "This course teaches you how to build mobile applications using React Native. You will learn to create apps that run on both Android and iOS from a single codebase. Topics include components, navigation, API calls, and local storage. Basic knowledge of JavaScript is recommended before taking this course.",
+                instructor: "Vikram Singh",
+                instructorBio: "Vikram Singh is a mobile app developer with 8 years of experience in React and React Native. He has published several apps on the Google Play Store and Apple App Store. He holds a degree in Computer Engineering from NIT Warangal. He enjoys teaching through real-world app examples and mini-projects.",
+                image: "images/img5.jpg",
+                price: "&#8377;4,299",
+                originalPrice: "&#8377;8,599",
+                duration: "16 Weeks",
+                lectures: "110 Lessons",
+                level: "Intermediate",
+                rating: "4.6 / 5.0"
+            },
+            6: {
+                title: "Ethical Hacking & Cybersecurity",
+                subtitle: "Learn cybersecurity concepts and ethical hacking",
+                description: "This course covers the basics of cybersecurity and ethical hacking. You will learn how attackers exploit systems and how to defend against them. Topics include networking basics, common attack types, password cracking, and vulnerability scanning. The course is designed for learners who want to start a career in cybersecurity.",
+                instructor: "Dr. Suresh Verma",
+                instructorBio: "Dr. Suresh Verma is a cybersecurity expert with over 12 years of experience in ethical hacking and network security. He has worked with government and private organizations on cybersecurity audits. He holds a Ph.D. in Information Security from BITS Pilani. He has trained thousands of students in ethical hacking and security tools.",
+                image: "images/img6.jpg",
+                price: "&#8377;5,999",
+                originalPrice: "&#8377;11,999",
+                duration: "20 Weeks",
+                lectures: "140 Lessons",
+                level: "Intermediate to Advanced",
+                rating: "4.9 / 5.0"
+            }
+        };
+
+        // Read ?id= from URL
+        var params = new URLSearchParams(window.location.search);
+        var id = parseInt(params.get("id")) || 1;
+        var course = courses[id];
+
+        if (course) {
+            document.title = course.title + " - CourseLearn";
+            document.getElementById("courseTitle").textContent = course.title;
+            document.getElementById("courseSubtitle").textContent = course.subtitle;
+            document.getElementById("courseDescription").textContent = course.description;
+            document.getElementById("instructorName").textContent = course.instructor;
+            document.getElementById("instructorBio").textContent = course.instructorBio;
+            document.getElementById("sidebarImage").style.cssText = "background: url('" + course.image + "') center/cover; height: 120px; border: 1px solid #000; margin-bottom: 10px;";
+            document.getElementById("currentPrice").innerHTML = course.price;
+            document.getElementById("originalPrice").innerHTML = course.originalPrice;
+            document.getElementById("duration").textContent = course.duration;
+            document.getElementById("lectures").textContent = course.lectures;
+            document.getElementById("level").textContent = course.level;
+            document.getElementById("rating").textContent = course.rating;
+        } else {
+            document.getElementById("courseTitle").textContent = "Course Not Found";
+        }
+    </script>
 </body>
 </html>
